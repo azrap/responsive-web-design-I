@@ -185,7 +185,7 @@ footer {
 /* Tablet max width */
 @media(max-width: 800px) {
     .container {
-      background: gray;
+      width:100%;
 
     }
 
@@ -206,9 +206,15 @@ footer {
 
     .cta {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         width:90%;
         margin-left: 5%;
+       
+    }
+
+    .cta-text{
+      
     }
 
     .cta-img{
@@ -250,8 +256,80 @@ footer {
 
     }
 
+}
 
+/* phone max width */
 
+@media(max-width: 500px) {
+    .container {
+      display:flex;
+      flex-direction: column;
+      width:100%;
     
+    }
+
+    header{
+        width:100%
+    }
+
+    /* header .logo {
+        border-bottom: grey solid 1px;
+        width:100%;
+    } */
+
+    header nav {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-top: grey solid 1px;
+        /* border: red solid 1px; */
+    }
+
+
+    header nav a {
+        width:100%;
+        text-align:center;
+        padding:20px;
+        border-bottom: grey solid 1px;
+    }
+
+    .cta{
+        margin-left: 10%;
+    }
+
+   
+
+    .main-content{
+        width:90%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 5%;
+
+    }
+
+    .main-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .top-content{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .bottom-content {
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    .text-content{
+        width:100%;
+    }
+
+
+  }
 
 }
